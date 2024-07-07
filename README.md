@@ -10,7 +10,6 @@ A customizable, searchable dropdown component for React applications, featuring 
 
 Make sure you have the following installed on your project:
 
-- node: ">=18.17.0"
 - react: "^18.3.1"
 - react-dom: "^18.3.1"
 - react-scripts: "5.0.1"
@@ -53,3 +52,16 @@ To play along with this component using Storybook, clone this git repository and
 npm install
 npm run storybook
 ```
+
+## Props
+
+| Prop           | Type      | Description                                                                                               | Default   |
+| -------------- | --------- | --------------------------------------------------------------------------------------------------------- | --------- |
+| `options`      | `array`   | An array of options to display in the dropdown. Each option should be an object with `value` and `label`. | `[]`      |
+| `isMultiple`   | `boolean` | Allow multiple options to be selected.                                                                    | `true`    |
+| `usePortal`    | `boolean` | Render dropdown using React Portals.                                                                      | `false`   |
+| `enableSearch` | `boolean` | Enable search functionality in the dropdown.                                                              | `true`    |
+| `outlined`     | `boolean` | Apply outlined style to the dropdown.                                                                     | `true`    |
+| `label`        | `string`  | Label for the dropdown.                                                                                   | `"Label"` |
+| `id`           | `string`  | ID for the dropdown element.                                                                              | `""`      |
+| `order`        | `string`  | Sorting order of the options (e.g., `"asc"` for ascending, `"desc"` for descending).                      | `"asc"`   |
