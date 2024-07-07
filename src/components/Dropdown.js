@@ -126,7 +126,10 @@ const Dropdown = ({
   }, []);
 
   const dropdown = (
-    <div id={id} className="flex flex-col lg:flex-row lg:items-center">
+    <div
+      id={id}
+      className="flex flex-col lg:flex-row lg:items-center text-left"
+    >
       <div className="w-full lg:w-2/12">{label}</div>
       <div ref={containerRef} className="relative w-full lg:w-10/12">
         <div

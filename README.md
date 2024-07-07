@@ -8,11 +8,13 @@ A customizable, searchable dropdown component for React applications, featuring 
 
 ### Prerequisites
 
-Make sure you have the following installed on your machine:
+Make sure you have the following installed on your project:
 
+- node: ">=18.17.0"
 - react: "^18.3.1"
 - react-dom: "^18.3.1"
 - react-scripts: "5.0.1"
+- tailwindcss: "^3.4.4",
 
 ### Installation
 
@@ -26,6 +28,21 @@ or
 
 ```bash
 yarn add ys-dropdown
+```
+
+Add to tailwind.config.js:
+
+```bash
+content: [
+    ...
+    "./node_modules/ys-dropdown/**/*.{js,jsx,ts,tsx}",
+  ],
+```
+
+Add it to your project:
+
+```bash
+import { Dropdown } from "ys-dropdown";
 ```
 
 ## Development and Storybook
