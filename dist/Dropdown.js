@@ -114,7 +114,7 @@ const Dropdown = _ref => {
   }, []);
   const dropdown = /*#__PURE__*/_react.default.createElement("div", {
     id: id,
-    className: "flex flex-col lg:flex-row lg:items-center"
+    className: "flex flex-col lg:flex-row lg:items-center text-left"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "w-full lg:w-2/12"
   }, label), /*#__PURE__*/_react.default.createElement("div", {
