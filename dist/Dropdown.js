@@ -13,10 +13,34 @@ function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; 
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 const Dropdown = _ref => {
   let {
-    options,
+    options = [{
+      label: "Option 1",
+      value: "option1"
+    }, {
+      label: "Option 2 with icon",
+      value: "option2"
+    }, {
+      label: "Long Option 3",
+      value: "option3"
+    }, {
+      label: "Long Long Option 4",
+      value: "option4"
+    }, {
+      label: "Long Long Long Option 5",
+      value: "option5"
+    }, {
+      label: "Long Long Long Long Option 6",
+      value: "option6"
+    }, {
+      label: "Long Long Long Long Long Option 7",
+      value: "option7"
+    }, {
+      label: "Long Long Long Long Long Long Option 8",
+      value: "option8"
+    }],
     isMultiple = false,
     label = "Label",
-    usePortal = true,
+    usePortal = false,
     enableSearch = true,
     outlined = true,
     id = "",
@@ -168,8 +192,8 @@ Dropdown.propTypes = {
   options: _propTypes.default.arrayOf(_propTypes.default.shape({
     value: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.number]).isRequired,
     label: _propTypes.default.string.isRequired
-  })).isRequired,
-  isMultiple: _propTypes.default.bool.isRequired,
+  })),
+  isMultiple: _propTypes.default.bool,
   usePortal: _propTypes.default.bool,
   enableSearch: _propTypes.default.bool,
   outlined: _propTypes.default.bool,
